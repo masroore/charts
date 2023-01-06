@@ -1,0 +1,32 @@
+{
+    "name": "masroore/charts",
+    "description": "The missing charting library on laravel",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/contracts": "^7.14.1|^8.0|^9.0",
+        "illuminate/http": "^7.14.1|^8.0|^9.0",
+        "illuminate/console": "^7.14.1|^8.0|^9.0",
+        "illuminate/support": "^7.14.1|^8.0|^9.0"
+    },
+    "authors": [
+        {
+            "name": "Èrik C. Forés",
+            "email": "soc@erik.cat"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ConsoleTVs\\Charts\\": "src/",
+            "Chartisan\\PHP\\": "src/Chartisan/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ConsoleTVs\\Charts\\ChartsServiceProvider"
+            ]
+        }
+    }
+}
